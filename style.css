@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f0f0;
+  color: #333333;
+  padding: 0 1rem;
+}
+
+header {
+  background-color:  #297986;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+section {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skills-list li {
+  background: #42689b;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.7rem;
+  background: #0f0f0f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color:#297986;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsive menu */
+@media (max-width: 600px) {
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    background: #9c7f7f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
